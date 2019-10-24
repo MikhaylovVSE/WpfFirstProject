@@ -31,8 +31,53 @@ namespace WpfFirstProject
             string name = (sender as Button).Name;
             switch (name)
             {
-                case "button1":
-                    AnimFunc((sender as Button), Convert.ToInt32(-row0.ActualHeight-(row0.ActualHeight/3)), 0);
+                case "Button1":
+                    AnimFunc((sender as Button), Convert.ToInt32(-row0.ActualHeight - (row0.ActualHeight / 3)), 0);
+                    break;
+
+            }
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            string name = (sender as Button).Name;
+            switch (name)
+            {
+                case "Button2":
+                    AnimFunc((sender as Button), Convert.ToInt32(-row0.ActualHeight), Convert.ToInt32(-column0.ActualWidth));
+                    break;
+            }
+        }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            string name = (sender as Button).Name;
+            switch (name)
+            {
+                case "Button3":
+                    AnimFunc((sender as Button), Convert.ToInt32(-row0.ActualHeight), Convert.ToInt32(column2.ActualWidth));
+                    break;
+            }
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            string name = (sender as Button).Name;
+            switch (name)
+            {
+                case "Button4":
+                    AnimFunc((sender as Button), Convert.ToInt32(row0.ActualHeight), Convert.ToInt32(-column0.ActualWidth));
+                    break;
+            }
+        }
+
+        private void Button5_Click(object sender, RoutedEventArgs e)
+        {
+            string name = (sender as Button).Name;
+            switch (name)
+            {
+                case "Button5":
+                    AnimFunc((sender as Button), Convert.ToInt32(row0.ActualHeight), Convert.ToInt32(column2.ActualWidth));
                     break;
             }
         }
